@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "mapbox-gl": "^2.10.0",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "turf": "^3.0.14"
   },
   "devDependencies": {
     "eslint": "8.24.0",

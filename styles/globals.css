@@ -15,12 +15,66 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  background: rgb(0, 29, 51);
+}
+
+.sidebar h1 {
+  color: #fff;
+}
+
+.mainContent {
+  width: calc(100vw - 300px);
+  margin-left: 300px;
+  height: 100vh;
+}
+
+#mapBox {
+  height: 100vh;
+  width: calc(100vw - 300px);
+}
+
+.mapBoxContainer {
+  position: relative;
+}
+
+
+.mapBoxContainer input{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 15px 20px;
+  width: 400px;
+  max-width: 90vw;
+  background: #001d33;
+  border: 2px solid #001d33;
+  border-radius: 50px;
+  z-index: 2;
+  color: #fff;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 200px;
+  width: 60%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  background: #ffffff4a;
+  border-radius: 0 0 0 20px;
+  padding: 40px;
 }
