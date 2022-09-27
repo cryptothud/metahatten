@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Map from '../functions/map'
+import Map2 from '../functions/map2'
 
 export default function Home() {
 
@@ -24,7 +24,7 @@ export default function Home() {
 
       <Sidebar />
       <div className="mainContent">
-        <Map />
+        <Map2 />
       </div>
 
     </div>
