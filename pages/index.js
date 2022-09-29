@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Map2 from '../functions/map2'
 
 export default function Home() {
 
@@ -24,7 +23,7 @@ export default function Home() {
 
       <Sidebar />
       <div className="mainContent">
-        <Map2 />
+        <iframe width='100%' height='100%' src="https://experience.arcgis.com/experience/215881dc1f594f6da5e566efbdc5d7d4/"></iframe>
       </div>
 
     </div>
